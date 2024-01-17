@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-// import { getUrls } from '../../apiCalls';
 import UrlContainer from '../UrlContainer/UrlContainer';
 import UrlForm from '../UrlForm/UrlForm';
 
 function App () {
   const [urls, setUrls] = useState([]);
-  // console.log(urls)
   
   useEffect(() => {
     fetch('http://localhost:3001/api/v1/urls')
